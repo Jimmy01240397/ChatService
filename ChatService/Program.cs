@@ -15,7 +15,7 @@ namespace ChatService
         static Appllication appllication;
         static void Main(string[] args)
         {
-            appllication = new Appllication(System.Net.Sockets.ProtocolType.Tcp);
+            appllication = new Appllication(System.Net.Sockets.ProtocolType.Udp);
             appllication.GetMessage += Appllication_GetMessage;
             appllication.Start();
 

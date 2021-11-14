@@ -1,2 +1,2 @@
 # ChatService
-A tcp chat server.
+A udp chat server.

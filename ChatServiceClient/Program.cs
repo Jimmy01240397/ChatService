@@ -60,7 +60,7 @@ namespace ChatServiceClient
             }
 
 
-            Client client = new Client(ProtocolType.Tcp);
+            Client client = new Client(ProtocolType.Udp);
             client.Connect(host, port);
 
             /*SetConsoleCtrlHandler(t =>

@@ -27,12 +27,12 @@ namespace ChatService
             {
                 case 0:
                     {
-                        Console.WriteLine(((Socket)socket).RemoteEndPoint.ToString() + ": " + sendData.Parameters.ToString());
+                        Console.WriteLine(RemoteEndPoint.ToString() + ": " + sendData.Parameters.ToString());
                         foreach (Peer a in appllication.allpeers)
                         {
                             if(a != this)
                             {
-                                a.Tell(0, ((Socket)socket).RemoteEndPoint.ToString() + ": " + sendData.Parameters.ToString());
+                                a.Tell(0, RemoteEndPoint.ToString() + ": " + sendData.Parameters.ToString());
                             }
                         }
                         break;
